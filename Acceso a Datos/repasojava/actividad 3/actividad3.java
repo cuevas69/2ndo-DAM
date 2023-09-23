@@ -1,3 +1,8 @@
+// 3. Estructuras de almacenamiento:
+// – Crea un programa que permita al usuario introducir una serie de números
+// en un array. Posteriormente, el programa deberá mostrar el número mayor,
+// el menor y el promedio de los números introducidos.
+
 import java.util.Scanner;
 
 public class actividad3 {

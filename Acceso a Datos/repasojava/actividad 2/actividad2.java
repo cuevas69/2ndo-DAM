@@ -1,3 +1,7 @@
+// 2. Estructuras de control:
+// – Desarrolla un programa que solicite al usuario un número y determine si es
+// par o impar utilizando estructuras de selección.
+
 import java.util.Scanner;
 
 public class actividad2 {
