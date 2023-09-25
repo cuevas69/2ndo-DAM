@@ -1,3 +1,7 @@
+// 6. Lectura y escritura de información:
+// – Crea un programa que lea un texto introducido por el usuario y lo almacene
+// en un fichero. Luego, lee el contenido del fichero y muéstralo en consola.
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -5,7 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class actividad6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

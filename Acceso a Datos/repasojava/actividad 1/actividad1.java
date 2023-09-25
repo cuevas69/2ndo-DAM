@@ -1,4 +1,5 @@
-/*Escribe un programa que solicite al usuario su nombre y edad, y muestre
+/*1. Introducción a la programación y elementos de un programa informático:
+– Escribe un programa que solicite al usuario su nombre y edad, y muestre
 un mensaje de bienvenida. Asegúrate de utilizar variables, constantes y
 comentarios en tu código.*/
 

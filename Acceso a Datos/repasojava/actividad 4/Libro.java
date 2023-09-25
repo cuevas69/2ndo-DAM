@@ -1,3 +1,8 @@
+// 4. Programación orientada a objetos:
+// – Diseña una clase llamada "Libro" con atributos: título, autor y número de
+// páginas. Incluye métodos para obtener y establecer estos atributos. Crea
+// un objeto de esta clase y muestra sus detalles.
+
 public class Libro {
     // Atributos
     private String titulo;
