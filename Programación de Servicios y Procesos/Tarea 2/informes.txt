@@ -1,0 +1,20 @@
+Nombre: Haaland, Edad: 31, Posición: Portero
+Nombre: Munitis, Edad: 29, Posición: Portero
+Nombre: Federico, Edad: 23, Posición: Portero
+Nombre: Muniain, Edad: 21, Posición: Defensa
+Nombre: Kounde, Edad: 32, Posición: Mediocampo
+Nombre: Casillas, Edad: 24, Posición: Defensa
+Nombre: Iniesta, Edad: 32, Posición: Defensa
+Nombre: Federico, Edad: 25, Posición: Mediocampo
+Nombre: Messi, Edad: 20, Posición: Mediocampo
+Nombre: Munitis, Edad: 36, Posición: Portero
+Nombre: Ronaldo, Edad: 18, Posición: Defensa
+Nombre: Federico, Edad: 35, Posición: Defensa
+Nombre: Marcos, Edad: 37, Posición: Portero
+Nombre: Marcos, Edad: 24, Posición: Delantero
+Nombre: Kounde, Edad: 19, Posición: Defensa
+Nombre: Marcos, Edad: 33, Posición: Defensa
+Nombre: Kounde, Edad: 22, Posición: Portero
+Nombre: Iniesta, Edad: 24, Posición: Delantero
+Nombre: Jose David, Edad: 24, Posición: Defensa
+Nombre: Federico, Edad: 30, Posición: Mediocampo

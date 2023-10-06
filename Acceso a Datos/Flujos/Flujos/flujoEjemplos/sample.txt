@@ -1,0 +1,4 @@
+Hola, este es un archivo de ejemplo.
+Estamos aprendiendo sobre LineNumberReader.
+Cada línea tiene su propio número.
+¡Espero que este ejemplo sea útil!
