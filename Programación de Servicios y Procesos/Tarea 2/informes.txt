@@ -1,20 +1,20 @@
-Nombre: Haaland, Edad: 31, Posición: Portero
-Nombre: Munitis, Edad: 29, Posición: Portero
-Nombre: Federico, Edad: 23, Posición: Portero
-Nombre: Muniain, Edad: 21, Posición: Defensa
-Nombre: Kounde, Edad: 32, Posición: Mediocampo
-Nombre: Casillas, Edad: 24, Posición: Defensa
-Nombre: Iniesta, Edad: 32, Posición: Defensa
-Nombre: Federico, Edad: 25, Posición: Mediocampo
-Nombre: Messi, Edad: 20, Posición: Mediocampo
-Nombre: Munitis, Edad: 36, Posición: Portero
-Nombre: Ronaldo, Edad: 18, Posición: Defensa
-Nombre: Federico, Edad: 35, Posición: Defensa
-Nombre: Marcos, Edad: 37, Posición: Portero
-Nombre: Marcos, Edad: 24, Posición: Delantero
-Nombre: Kounde, Edad: 19, Posición: Defensa
-Nombre: Marcos, Edad: 33, Posición: Defensa
-Nombre: Kounde, Edad: 22, Posición: Portero
-Nombre: Iniesta, Edad: 24, Posición: Delantero
-Nombre: Jose David, Edad: 24, Posición: Defensa
-Nombre: Federico, Edad: 30, Posición: Mediocampo
+Nombre: Muniain, Edad: 18, Posición: Portero
+Nombre: Pedro, Edad: 19, Posición: Portero
+Nombre: Munitis, Edad: 26, Posición: Defensa
+Nombre: Higuain, Edad: 25, Posición: Mediocampo
+Nombre: Pedro, Edad: 36, Posición: Defensa
+Nombre: Federico, Edad: 18, Posición: Defensa
+Nombre: Casillas, Edad: 27, Posición: Mediocampo
+Nombre: Ronaldo, Edad: 29, Posición: Delantero
+Nombre: Higuain, Edad: 18, Posición: Delantero
+Nombre: Federico, Edad: 38, Posición: Delantero
+Nombre: Jose David, Edad: 34, Posición: Defensa
+Nombre: Federico, Edad: 33, Posición: Defensa
+Nombre: Jose David, Edad: 34, Posición: Defensa
+Nombre: Munitis, Edad: 22, Posición: Defensa
+Nombre: Iniesta, Edad: 28, Posición: Portero
+Nombre: Aduriz, Edad: 33, Posición: Mediocampo
+Nombre: Kounde, Edad: 27, Posición: Portero
+Nombre: Casillas, Edad: 35, Posición: Delantero
+Nombre: Xavi, Edad: 33, Posición: Defensa
+Nombre: Iniesta, Edad: 19, Posición: Defensa
