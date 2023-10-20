@@ -74,16 +74,120 @@
                 android:translationX="50px"
                 android:translationY="-1380px" />
 
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Distancia Máxima"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1300px" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:scaleY="1"
+                android:translationX="20px"
+                android:max="100"
+                android:translationY="-1280px" />
+
+            <TextView
+                android:id="@+id/km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="0 Km"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="620px"
+                android:translationY="-1350px" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="¿Que perfil deseas ver?"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1300px" />
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:translationX="50px"
+                android:translationY="-1280px">
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Mujeres"
+                    android:textColor="#F4F4F4"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Hombres"
+                    android:textColor="#FAF6F6"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/bothRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Ambos"
+                    android:textColor="#FBF8F8"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Edad Máxima"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1200px" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:max="80"
+                android:scaleY="1"
+                android:translationX="20px"
+                android:translationY="-1180px" />
+
+            <TextView
+                android:id="@+id/km2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="18 años"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="620px"
+                android:translationY="-1250px" />
+
             <ImageView
                 android:id="@+id/inicio"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                app:layout_constraintBottom_toBottomOf="@id/imageView"
-                app:layout_constraintEnd_toEndOf="@id/imageView"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.5"
                 app:srcCompat="@drawable/log2o" />
 
         </LinearLayout>
