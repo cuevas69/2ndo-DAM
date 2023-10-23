@@ -14,9 +14,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import androidx.annotation.NonNull;
 
 public class PageConfig extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,7 @@ public class PageConfig extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
+
 
         SeekBar seekBar = findViewById(R.id.seekBar);
         TextView km = findViewById(R.id.km);
@@ -100,6 +104,18 @@ public class PageConfig extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar2) {
                 // Método requerido, pero no necesitamos realizar ninguna acción aquí.
+            }
+        });
+
+        TextView logoutButton = findViewById(R.id.textView11);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Cerrar sesión
+                FirebaseAuth.getInstance().signOut();
+                // Navegar de nuevo a la actividad de inicio de sesión (LoginActivity)
+                startActivity(new Intent(PageConfig.this, PageLogin.class));
+                finish(); // Cierra la actividad actual
             }
         });
     }
