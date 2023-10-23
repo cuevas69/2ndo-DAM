@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Afuego"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".PageLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.afuego.PagePerfil" />
+
+        <activity android:name="com.example.afuego.PageConfig" />
+
+        <activity android:name="com.example.afuego.MainActivity" />
+
+        <activity android:name="com.example.afuego.PageRegister" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

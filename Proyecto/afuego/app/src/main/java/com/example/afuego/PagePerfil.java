@@ -6,29 +6,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class PagePerfil extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.page_perfil);
 
-        ImageView perfil = findViewById(R.id.perfil);
-        perfil.setOnClickListener(new View.OnClickListener(){
+        ImageView inicio = findViewById(R.id.inicio);
+        inicio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(v.getContext(),PagePerfil.class);
+                Intent intent = new Intent(v.getContext(),MainActivity.class);
                 startActivityForResult(intent, 0);
             }
         });
 
-        ImageView login = findViewById(R.id.imageView15);
-        login.setOnClickListener(new View.OnClickListener(){
+        ImageView ajustes = findViewById(R.id.ajustes);
+        ajustes.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(v.getContext(),PageLogin.class);
+                Intent intent = new Intent(v.getContext(),PageConfig.class);
                 startActivityForResult(intent, 0);
             }
         });
