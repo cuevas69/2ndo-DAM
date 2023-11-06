@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "JUnit Test",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "VersionDOMTest",
+      "args": "",
+      "projectName": "xml",
+      "vmArgs": "-ea",
+      "junit": {
+        "mode": "org.junit.platform.launcher",
+        "testNamePattern": "^.*Test$"
+      }
+    }
+  ]
+}

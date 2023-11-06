@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<marcador>
+	<competicion>
+		<eventos>
+			<evento id="521719">
+				<fecha>13/08/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="21">Valencia</equipolocal>
+				<equipovisitante id="109">Getafe</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/191.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1450.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/val_get/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/val_get/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521714">
+				<fecha>14/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="197">Cádiz</equipolocal>
+				<equipovisitante id="112">Levante</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1737.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/855.png</escudoVisitante>
+				<tv>M.LaLiga</tv>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/cad_lev/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/cad_lev/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521716">
+				<fecha>14/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="114">Mallorca</equipolocal>
+				<equipovisitante id="5">Betis</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/181.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/185.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/mal_bet/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/mal_bet/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521711">
+				<fecha>14/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="92">Alavés</equipolocal>
+				<equipovisitante id="14">R. Madrid</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>4</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/173.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/186.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/ala_rma/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/ala_rma/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521717">
+				<fecha>14/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="117">Osasuna</equipolocal>
+				<equipovisitante id="9">Espanyol</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/450.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/177.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/osa_esp/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/osa_esp/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521713">
+				<fecha>15/08/2021 17:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="6">Celta</equipolocal>
+				<equipovisitante id="3">Atlético</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/176.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/175.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/cel_atm/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/cel_atm/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521712">
+				<fecha>15/08/2021 20:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="4">Barcelona</equipolocal>
+				<equipovisitante id="15">R. Sociedad</equipovisitante>
+				<resultadolocal>4</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/178.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/188.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/bar_rso/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/bar_rso/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521718">
+				<fecha>15/08/2021 22:15</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="17">Sevilla</equipolocal>
+				<equipovisitante id="13">Rayo</equipovisitante>
+				<resultadolocal>3</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/179.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/184.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/sev_ray/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/sev_ray/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521715">
+				<fecha>16/08/2021 20:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="132">Villarreal</equipolocal>
+				<equipovisitante id="201">Granada</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/449.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/5683.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/vil_gda/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/vil_gda/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521720">
+				<fecha>16/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="177">Elche</equipolocal>
+				<equipovisitante id="2">Athletic</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/954.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/174.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/elc_ath/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/elc_ath/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521719">
+				<fecha>13/08/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="21">Valencia</equipolocal>
+				<equipovisitante id="109">Getafe</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/191.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1450.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/val_get/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/val_get/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521714">
+				<fecha>14/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="197">Cádiz</equipolocal>
+				<equipovisitante id="112">Levante</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1737.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/855.png</escudoVisitante>
+				<tv>M.LaLiga</tv>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/cad_lev/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/cad_lev/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521716">
+				<fecha>14/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="114">Mallorca</equipolocal>
+				<equipovisitante id="5">Betis</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/181.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/185.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/mal_bet/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/mal_bet/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521711">
+				<fecha>14/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="92">Alavés</equipolocal>
+				<equipovisitante id="14">R. Madrid</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>4</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/173.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/186.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/ala_rma/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/ala_rma/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521717">
+				<fecha>14/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="117">Osasuna</equipolocal>
+				<equipovisitante id="9">Espanyol</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/450.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/177.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/osa_esp/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/osa_esp/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521713">
+				<fecha>15/08/2021 17:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="6">Celta</equipolocal>
+				<equipovisitante id="3">Atlético</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/176.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/175.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/cel_atm/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/cel_atm/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521712">
+				<fecha>15/08/2021 20:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="4">Barcelona</equipolocal>
+				<equipovisitante id="15">R. Sociedad</equipovisitante>
+				<resultadolocal>4</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/178.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/188.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/bar_rso/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/bar_rso/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521718">
+				<fecha>15/08/2021 22:15</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="17">Sevilla</equipolocal>
+				<equipovisitante id="13">Rayo</equipovisitante>
+				<resultadolocal>3</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/179.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/184.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/sev_ray/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/sev_ray/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521715">
+				<fecha>16/08/2021 20:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="132">Villarreal</equipolocal>
+				<equipovisitante id="201">Granada</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/449.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/5683.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/vil_gda/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/vil_gda/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521720">
+				<fecha>16/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="177">Elche</equipolocal>
+				<equipovisitante id="2">Athletic</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/954.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/174.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/elc_ath/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_1/elc_ath/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521729">
+				<fecha>20/08/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="5">Betis</equipolocal>
+				<equipovisitante id="197">Cádiz</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/185.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1737.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219270-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/bet_cad/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/bet_cad/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521721">
+				<fecha>21/08/2021 17:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="92">Alavés</equipolocal>
+				<equipovisitante id="114">Mallorca</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/173.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/181.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219267-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/ala_mal/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/ala_mal/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521724">
+				<fecha>21/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="9">Espanyol</equipolocal>
+				<equipovisitante id="132">Villarreal</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/177.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/449.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219273-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/esp_vil/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/esp_vil/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521726">
+				<fecha>21/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="201">Granada</equipolocal>
+				<equipovisitante id="21">Valencia</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/5683.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/191.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219272-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/gda_val/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/gda_val/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521722">
+				<fecha>21/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="2">Athletic</equipolocal>
+				<equipovisitante id="4">Barcelona</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/174.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/178.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219268-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/ath_bar/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/ath_bar/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521725">
+				<fecha>22/08/2021 17:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="15">R. Sociedad</equipolocal>
+				<equipovisitante id="13">Rayo</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/188.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/184.png</escudoVisitante>
+				<tv>Movistar</tv>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219276-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/rso_ray/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/rso_ray/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521723">
+				<fecha>22/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="3">Atlético</equipolocal>
+				<equipovisitante id="177">Elche</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/175.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/954.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219269-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/atm_elc/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/atm_elc/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521727">
+				<fecha>22/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="112">Levante</equipolocal>
+				<equipovisitante id="14">R. Madrid</equipovisitante>
+				<resultadolocal>3</resultadolocal>
+				<resultadovisitante>3</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/855.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/186.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219274-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/lev_rma/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/lev_rma/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521730">
+				<fecha>23/08/2021 20:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="109">Getafe</equipolocal>
+				<equipovisitante id="17">Sevilla</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1450.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/179.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219271-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/get_sev/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/get_sev/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521728">
+				<fecha>23/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="117">Osasuna</equipolocal>
+				<equipovisitante id="6">Celta</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/450.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/176.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/2/2219275-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/osa_cel/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_2/osa_cel/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521736">
+				<fecha>27/08/2021 20:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="114">Mallorca</equipolocal>
+				<equipovisitante id="9">Espanyol</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/181.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/177.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/mal_esp/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/mal_esp/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521735">
+				<fecha>27/08/2021 22:15</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="21">Valencia</equipolocal>
+				<equipovisitante id="92">Alavés</equipovisitante>
+				<resultadolocal>3</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/191.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/173.png</escudoVisitante>
+				<tv>M. LaLiga</tv>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/val_ala/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/val_ala/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521733">
+				<fecha>28/08/2021 17:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="6">Celta</equipolocal>
+				<equipovisitante id="2">Athletic</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/176.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/174.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/cel_ath/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/cel_ath/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521740">
+				<fecha>28/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="177">Elche</equipolocal>
+				<equipovisitante id="17">Sevilla</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/954.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/179.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/elc_sev/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/elc_sev/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521739">
+				<fecha>28/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="15">R. Sociedad</equipolocal>
+				<equipovisitante id="112">Levante</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/188.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/855.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/rso_lev/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/rso_lev/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521738">
+				<fecha>28/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="5">Betis</equipolocal>
+				<equipovisitante id="14">R. Madrid</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/185.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/186.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/bet_rma/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/bet_rma/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521732">
+				<fecha>29/08/2021 17:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="4">Barcelona</equipolocal>
+				<equipovisitante id="109">Getafe</equipovisitante>
+				<resultadolocal>2</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/178.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1450.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/bar_get/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/bar_get/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521734">
+				<fecha>29/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="197">Cádiz</equipolocal>
+				<equipovisitante id="117">Osasuna</equipovisitante>
+				<resultadolocal>2</resultadolocal>
+				<resultadovisitante>3</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1737.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/450.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/cad_osa/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/cad_osa/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521737">
+				<fecha>29/08/2021 19:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="13">Rayo</equipolocal>
+				<equipovisitante id="201">Granada</equipovisitante>
+				<resultadolocal>4</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/184.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/5683.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/ray_gda/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/ray_gda/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521731">
+				<fecha>29/08/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="3">Atlético</equipolocal>
+				<equipovisitante id="132">Villarreal</equipovisitante>
+				<resultadolocal>2</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/175.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/449.png</escudoVisitante>
+				<tv/>
+				<estadisticas/>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/atm_vil/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_3/atm_vil/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521746">
+				<fecha>11/09/2021 18:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="112">Levante</equipolocal>
+				<equipovisitante id="13">Rayo</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/855.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/184.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219292-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/lev_ray/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/lev_ray/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521741">
+				<fecha>11/09/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="2">Athletic</equipolocal>
+				<equipovisitante id="114">Mallorca</equipovisitante>
+				<resultadolocal>2</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/174.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/181.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219287-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/ath_mal/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/ath_mal/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521743">
+				<fecha>12/09/2021 14:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="9">Espanyol</equipolocal>
+				<equipovisitante id="3">Atlético</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/177.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/175.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219291-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/esp_atm/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/esp_atm/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521747">
+				<fecha>12/09/2021 16:15</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="117">Osasuna</equipolocal>
+				<equipovisitante id="21">Valencia</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>4</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/450.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/191.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219293-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/osa_val/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/osa_val/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521742">
+				<fecha>12/09/2021 18:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="197">Cádiz</equipolocal>
+				<equipovisitante id="15">R. Sociedad</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1737.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/188.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219289-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/cad_rso/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/cad_rso/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521748">
+				<fecha>12/09/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="14">R. Madrid</equipolocal>
+				<equipovisitante id="6">Celta</equipovisitante>
+				<resultadolocal>5</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/186.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/176.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219294-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/rma_cel/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/rma_cel/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521744">
+				<fecha>13/09/2021 20:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="109">Getafe</equipolocal>
+				<equipovisitante id="177">Elche</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1450.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/954.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219288-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/get_elc/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/get_elc/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521750">
+				<fecha>13/09/2021 22:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="201">Granada</equipolocal>
+				<equipovisitante id="5">Betis</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/5683.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/185.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219290-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/gda_bet/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/gda_bet/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521745">
+				<fecha>21/12/2021 19:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="132">Villarreal</equipolocal>
+				<equipovisitante id="92">Alavés</equipovisitante>
+				<resultadolocal>5</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/449.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/173.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219296-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/vil_ala/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/vil_ala/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521749">
+				<fecha>21/12/2021 21:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="17">Sevilla</equipolocal>
+				<equipovisitante id="4">Barcelona</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/179.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/178.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/4/2219295-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/sev_bar/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_4/sev_bar/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521754">
+				<fecha>17/09/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="6">Celta</equipolocal>
+				<equipovisitante id="197">Cádiz</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/176.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1737.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219301-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/cel_cad/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/cel_cad/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521757">
+				<fecha>18/09/2021 14:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="13">Rayo</equipolocal>
+				<equipovisitante id="109">Getafe</equipovisitante>
+				<resultadolocal>3</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/184.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1450.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219305-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/ray_get/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/ray_get/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521752">
+				<fecha>18/09/2021 16:15</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="3">Atlético</equipolocal>
+				<equipovisitante id="2">Athletic</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/175.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/174.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219298-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/atm_ath/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/atm_ath/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521760">
+				<fecha>18/09/2021 18:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="177">Elche</equipolocal>
+				<equipovisitante id="112">Levante</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/954.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/855.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219306-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/elc_lev/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/elc_lev/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521751">
+				<fecha>18/09/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="92">Alavés</equipolocal>
+				<equipovisitante id="117">Osasuna</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/173.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/450.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219297-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/ala_osa/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/ala_osa/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521756">
+				<fecha>19/09/2021 14:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="114">Mallorca</equipolocal>
+				<equipovisitante id="132">Villarreal</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/181.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/449.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219302-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/mal_vil/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/mal_vil/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521759">
+				<fecha>19/09/2021 16:15</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="15">R. Sociedad</equipolocal>
+				<equipovisitante id="17">Sevilla</equipovisitante>
+				<resultadolocal>0</resultadolocal>
+				<resultadovisitante>0</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/188.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/179.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219303-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/rso_sev/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/rso_sev/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521758">
+				<fecha>19/09/2021 18:30</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="5">Betis</equipolocal>
+				<equipovisitante id="9">Espanyol</equipovisitante>
+				<resultadolocal>2</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/185.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/177.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219300-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/bet_esp/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>-1</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/bet_esp/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521755">
+				<fecha>19/09/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="21">Valencia</equipolocal>
+				<equipovisitante id="14">R. Madrid</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>2</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/191.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/186.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219304-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/val_rma/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/val_rma/directo.xml</enlaceDirecto>
+			</evento>
+			<evento id="521753">
+				<fecha>20/09/2021 21:00</fecha>
+				<estado id="3">Finalizado</estado>
+				<equipolocal id="4">Barcelona</equipolocal>
+				<equipovisitante id="201">Granada</equipovisitante>
+				<resultadolocal>1</resultadolocal>
+				<resultadovisitante>1</resultadovisitante>
+				<tipodeporte>1</tipodeporte>
+				<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/178.png</escudoLocal>
+				<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/5683.png</escudoVisitante>
+				<tv/>
+				<estadisticas>https://www.marca.com/eventos/opta/futbol/2021/23/5/2219299-estadisticasEquiposXml.xml</estadisticas>
+				<alineaciones>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/bar_gda/alineaciones.html</alineaciones>
+				<comentariosLectores/>
+				<previacronica>2</previacronica>
+				<enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2021_22/la-liga/jornada_5/bar_gda/directo.xml</enlaceDirecto>
+			</evento>
+		</eventos>
+		<clasificacion>
+			<team>
+				<name>Valencia</name>
+				<rank>1</rank>
+				<points>7</points>
+				<played>3</played>
+				<won>2</won>
+				<lost>0</lost>
+				<drawn>1</drawn>
+				<goals_scored>5</goals_scored>
+				<goals_conceded>1</goals_conceded>
+			</team>
+			<team>
+				<name>Mallorca</name>
+				<rank>2</rank>
+				<points>7</points>
+				<played>3</played>
+				<won>2</won>
+				<lost>0</lost>
+				<drawn>1</drawn>
+				<goals_scored>3</goals_scored>
+				<goals_conceded>1</goals_conceded>
+			</team>
+			<team>
+				<name>Sevilla</name>
+				<rank>3</rank>
+				<points>6</points>
+				<played>2</played>
+				<won>2</won>
+				<lost>0</lost>
+				<drawn>0</drawn>
+				<goals_scored>4</goals_scored>
+				<goals_conceded>0</goals_conceded>
+			</team>
+			<team>
+				<name>Atlético</name>
+				<rank>4</rank>
+				<points>6</points>
+				<played>2</played>
+				<won>2</won>
+				<lost>0</lost>
+				<drawn>0</drawn>
+				<goals_scored>3</goals_scored>
+				<goals_conceded>1</goals_conceded>
+			</team>
+			<team>
+				<name>R. Madrid</name>
+				<rank>5</rank>
+				<points>4</points>
+				<played>2</played>
+				<won>1</won>
+				<lost>0</lost>
+				<drawn>1</drawn>
+				<goals_scored>7</goals_scored>
+				<goals_conceded>4</goals_conceded>
+			</team>
+			<team>
+				<name>Barcelona</name>
+				<rank>6</rank>
+				<points>4</points>
+				<played>2</played>
+				<won>1</won>
+				<lost>0</lost>
+				<drawn>1</drawn>
+				<goals_scored>5</goals_scored>
+				<goals_conceded>3</goals_conceded>
+			</team>
+			<team>
+				<name>R. Sociedad</name>
+				<rank>7</rank>
+				<points>3</points>
+				<played>2</played>
+				<won>1</won>
+				<lost>1</lost>
+				<drawn>0</drawn>
+				<goals_scored>3</goals_scored>
+				<goals_conceded>4</goals_conceded>
+			</team>
+			<team>
+				<name>Levante</name>
+				<rank>8</rank>
+				<points>2</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>0</lost>
+				<drawn>2</drawn>
+				<goals_scored>4</goals_scored>
+				<goals_conceded>4</goals_conceded>
+			</team>
+			<team>
+				<name>Betis</name>
+				<rank>9</rank>
+				<points>2</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>0</lost>
+				<drawn>2</drawn>
+				<goals_scored>2</goals_scored>
+				<goals_conceded>2</goals_conceded>
+			</team>
+			<team>
+				<name>Cádiz</name>
+				<rank>10</rank>
+				<points>2</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>0</lost>
+				<drawn>2</drawn>
+				<goals_scored>2</goals_scored>
+				<goals_conceded>2</goals_conceded>
+			</team>
+			<team>
+				<name>Athletic</name>
+				<rank>11</rank>
+				<points>2</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>0</lost>
+				<drawn>2</drawn>
+				<goals_scored>1</goals_scored>
+				<goals_conceded>1</goals_conceded>
+			</team>
+			<team>
+				<name>Granada</name>
+				<rank>12</rank>
+				<points>2</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>0</lost>
+				<drawn>2</drawn>
+				<goals_scored>1</goals_scored>
+				<goals_conceded>1</goals_conceded>
+			</team>
+			<team>
+				<name>Osasuna</name>
+				<rank>13</rank>
+				<points>2</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>0</lost>
+				<drawn>2</drawn>
+				<goals_scored>0</goals_scored>
+				<goals_conceded>0</goals_conceded>
+			</team>
+			<team>
+				<name>Villarreal</name>
+				<rank>14</rank>
+				<points>2</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>0</lost>
+				<drawn>2</drawn>
+				<goals_scored>0</goals_scored>
+				<goals_conceded>0</goals_conceded>
+			</team>
+			<team>
+				<name>Espanyol</name>
+				<rank>15</rank>
+				<points>2</points>
+				<played>3</played>
+				<won>0</won>
+				<lost>1</lost>
+				<drawn>2</drawn>
+				<goals_scored>0</goals_scored>
+				<goals_conceded>1</goals_conceded>
+			</team>
+			<team>
+				<name>Celta</name>
+				<rank>16</rank>
+				<points>1</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>1</lost>
+				<drawn>1</drawn>
+				<goals_scored>1</goals_scored>
+				<goals_conceded>2</goals_conceded>
+			</team>
+			<team>
+				<name>Elche</name>
+				<rank>17</rank>
+				<points>1</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>1</lost>
+				<drawn>1</drawn>
+				<goals_scored>0</goals_scored>
+				<goals_conceded>1</goals_conceded>
+			</team>
+			<team>
+				<name>Getafe</name>
+				<rank>18</rank>
+				<points>0</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>2</lost>
+				<drawn>0</drawn>
+				<goals_scored>0</goals_scored>
+				<goals_conceded>2</goals_conceded>
+			</team>
+			<team>
+				<name>Rayo</name>
+				<rank>19</rank>
+				<points>0</points>
+				<played>2</played>
+				<won>0</won>
+				<lost>2</lost>
+				<drawn>0</drawn>
+				<goals_scored>0</goals_scored>
+				<goals_conceded>4</goals_conceded>
+			</team>
+			<team>
+				<name>Alavés</name>
+				<rank>20</rank>
+				<points>0</points>
+				<played>3</played>
+				<won>0</won>
+				<lost>3</lost>
+				<drawn>0</drawn>
+				<goals_scored>1</goals_scored>
+				<goals_conceded>8</goals_conceded>
+			</team>
+		</clasificacion>
+	</competicion>
+</marcador>
