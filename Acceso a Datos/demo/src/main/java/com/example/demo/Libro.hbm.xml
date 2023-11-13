@@ -1,0 +1,16 @@
+<hibernate-mapping>
+    <class name="Libro" table="libro">
+        <id name="id" column="libro_id">
+            <generator class="native"/>
+        </id>
+
+        <property name="titulo" column="titulo" type="string"/>
+
+        <property name="autor" column="autor" type="string"/>
+
+        <property name="genero" column="genero" type="string"/>
+
+        <property name="anioPublicacion" column="anio_publicacion" type="int"/>
+
+    </class>
+</hibernate-mapping>
