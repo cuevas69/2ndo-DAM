@@ -1,0 +1,11 @@
+Me parece muy buena actividad en la que comprendemos y analizamos a fondo un archivo .xml con programas .java.
+En mi caso, opino que me pareció muy útil tanto el análisis del .xml, listando todos los nodos en un archivo de salida, 
+además de poder sacar campos específicos (en este caso el id), tanto el listar resultados por versión DOM y XPath.
+La versión DOM y XPath fué un método práctico y simple para poder listar por consola campos específicos (en este caso los resultados).
+También estructuré un manejo de excepciones perfecto con try-catch para que el programa no se detenga abruptamente en caso de errores.
+Hice una jerarquía simple de clases y tests para que la aplicación funcione correctamente.
+Agregué comentarios en cada línea del código para que me sea más simple comprender el programa y saber que corregir en caso de errores.
+Se ha manejado correctamente el manejo de atributos y librerías.
+Como mejora, opino que la versión SAX sobra habiendo usado DOM y XPath. DOM y XPath me parecen métodos más simples y efectivos que SAX,
+porque son capaces de leer e imprimir líneas del fichero de entrada (.xml) correctamente, SAX no es capaz de imprimir nodos, a no ser
+que la estructura del .xml sea más simple o se especifique muy genéricamente en el programa, cosa que llevaría más tiempo y esfuerzo.

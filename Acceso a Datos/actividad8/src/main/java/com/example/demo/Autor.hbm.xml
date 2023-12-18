@@ -1,0 +1,12 @@
+<hibernate-mapping>
+    <class name="Autor" table="autor">
+        <id name="id" column="autor_id">
+            <generator class="native"/>
+        </id>
+        
+        <property name="nombre" column="nombre" type="string"/>
+
+        <property name="nacionalidad" column="nacionalidad" type="string"/>
+
+    </class>
+</hibernate-mapping>
