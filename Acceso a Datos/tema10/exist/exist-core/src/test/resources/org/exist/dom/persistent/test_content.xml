@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+	domains="(topic reference) (topic hi-d) (topic ut-d) (topic indexing-d) (topic hazard-d) (topic abbrev-d) (topic pr-d) (topic sw-d) (topic ui-d)"
+	class="- topic/topic reference/reference " ditaarch:DITAArchVersion="1.2" id="reference-6996">
+	<title class="- topic/title ">All the ways a document can leave or enter JorsekCM</title>
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<author class="- topic/author " type="creator">Patrick Bosek
+			&lt;patrick.bosek@jorsek.com&gt;</author>
+		<metadata class="- topic/metadata ">
+			<keywords class="- topic/keywords "/>
+		</metadata>
+	</prolog>
+	<refbody class="- topic/body reference/refbody ">
+		<refsyn class="- topic/section reference/refsyn "/>
+		
+	</refbody>
+</reference>

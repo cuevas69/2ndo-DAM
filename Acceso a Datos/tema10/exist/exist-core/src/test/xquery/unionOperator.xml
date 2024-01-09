@@ -1,0 +1,120 @@
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<TestSet>
+    <testName>tests for union operator in path step</testName>
+    <description>
+        <p>tests for union operator in path step</p>
+        <author>Ron Van den Branden</author>
+    </description>
+    <setup>
+    </setup>
+    <test output="xml">
+        <task>union operator, stand-alone</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return ($a|$a)
+        ]]></code>
+        <expected><el><el1/><el2 att="val"/><el3/></el></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, self axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/(.|.)
+        ]]></code>
+        <expected><el><el1/><el2 att="val"/><el3/></el></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, child axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/(*|*)
+        ]]></code>
+        <expected><el1/><el2 att="val"/><el3/></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, parent axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/el2/(parent::*|parent::*)
+        ]]></code>
+        <expected><el><el1/><el2 att="val"/><el3/></el></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, descendant axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/(descendant::*[1]|descendant::*[1])
+        ]]></code>
+        <expected><el1/></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, descendant-or-self axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/(descendant-or-self::*[1]|descendant-or-self::*[1])
+        ]]></code>
+        <expected><el><el1/><el2 att="val"/><el3/></el></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, ancestor axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/el2/(ancestor::*[1]|ancestor::*[1])
+        ]]></code>
+        <expected><el><el1/><el2 att="val"/><el3/></el></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, ancestor-or-self axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/el2/(ancestor-or-self::*[1]|ancestor-or-self::*[1])
+        ]]></code>
+        <expected><el2 att="val"/></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, sibling axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/el2/(preceding-sibling::*|following-sibling::*)
+        ]]></code>
+        <expected><el1/><el3/></expected>
+    </test>
+    <test output="xml">
+        <task>inside location step, preceding/following axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/el2/(preceding::*|following::*)
+        ]]></code>
+        <expected><el1/><el3/></expected>
+    </test>
+    <test output="text">
+        <task>inside location step, attribute axis</task>
+        <code><![CDATA[
+          let $a := <el><el1/><el2 att="val"/><el3/></el>
+          return $a/el2/(@*[1]|@*[1])/string()
+        ]]></code>
+        <expected>val</expected>
+    </test>
+</TestSet>

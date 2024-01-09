@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.exist-db</groupId>
+        <artifactId>exist-parent</artifactId>
+        <version>6.2.0</version>
+        <relativePath>../exist-parent</relativePath>
+    </parent>
+
+    <artifactId>exist-installer</artifactId>
+    <packaging>izpack-jar</packaging>
+
+    <name>eXist-db IzPack Installer</name>
+    <description>IzPack Installer for eXist-db NoSQL Database Client/Server</description>
+
+    <scm>
+        <connection>scm:git:https://github.com/exist-db/exist.git</connection>
+        <developerConnection>scm:git:https://github.com/exist-db/exist.git</developerConnection>
+        <url>scm:git:https://github.com/exist-db/exist.git</url>
+      <tag>eXist-6.2.0</tag>
+  </scm>
+
+    <properties>
+        <izpack.resources.src>${basedir}/src/main/izpack</izpack.resources.src>
+        <izpack.resources.target>${basedir}/target/izpack</izpack.resources.target>
+
+        <izpack.installation.info.url>${project.organization.url}</izpack.installation.info.url>
+        <izpack.installation.info.appversion>${project.version}</izpack.installation.info.appversion>
+        <izpack.installation.info.author.name>${project.organization.name}</izpack.installation.info.author.name>
+        <izpack.installation.info.author.email>${contact.email}</izpack.installation.info.author.email>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>exist-distribution</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>analyze</id>
+                        <goals>
+                            <goal>analyze-only</goal>
+                        </goals>
+                        <configuration>
+                            <failOnWarning>true</failOnWarning>
+                            <ignoredUnusedDeclaredDependencies>
+                                <ignoredUnusedDeclaredDependency>${project.groupId}:exist-distribution:pom:${project.version}</ignoredUnusedDeclaredDependency>  <!-- needed at runtime to support lucene query syntax -->
+                            </ignoredUnusedDeclaredDependencies>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-iz-pack-resources</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${izpack.resources.target}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${izpack.resources.src}</directory>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.izpack</groupId>
+                <artifactId>izpack-maven-plugin</artifactId>
+                <version>${izpack.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <installFile>${izpack.resources.target}/install.xml</installFile>
+                    <baseDir>${basedir}/../exist-distribution/target/exist-distribution-${project.version}-dir</baseDir>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>codesign-izpack-jar</id>
+            <activation>
+                <property>
+                    <name>izpack-signing</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jarsigner-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>sign-izpack-jar</id>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                                <configuration>
+                                    <keystore>${existdb.release.keystore}</keystore>
+                                    <storepass>${existdb.release.keystore.pass}</storepass>
+                                    <alias>${existdb.release.keystore.key.alias}</alias>
+                                    <keypass>${existdb.release.keystore.key.pass}</keypass>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <!-- NOTE: this is activated by the maven-release-plugin -->
+            <id>exist-release</id>
+            <build>
+                <plugins>
+                    <!-- This is needed in a profile to workaround https://github.com/jutzig/github-release-plugin/issues/50 -->
+                    <plugin>
+                        <groupId>de.jutzig</groupId>
+                        <artifactId>github-release-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>github-upload</id>
+                                <phase>deploy</phase>
+                                <goals>
+                                    <goal>release</goal>
+                                </goals>
+                                <inherited>true</inherited>
+                                <configuration>
+                                    <description>
+                                        Release Notes: https://exist-db.org/exist/apps/wiki/blogs/eXist/exist${project.version}
+
+                                        Maven Central: https://search.maven.org/search?q=g:org.exist-db
+                                    </description>
+                                    <releaseName>eXist-db ${project.version}</releaseName>
+                                    <tag>eXist-${project.version}</tag>
+                                    <fileSets>
+                                        <fileSet>
+                                            <directory>${project.build.directory}</directory>
+                                            <includes>
+                                                <include>${project.artifactId}-${project.version}.jar</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<TestSet>
+    <testName>xquery3 switch</testName>
+    <description>
+        <p>Test xquery3 switch functionality</p>
+        <author>Leif-Jöran Olsson</author>
+    </description>
+    <setup>
+        <create-collection parent="/db" name="xquery3"/>
+        <store collection="/db/xquery3" name="product-err.xml"><![CDATA[
+            <products>
+              <product>
+                <name>broiler</name>
+                <category>kitchen</category>
+                <price>100</price>
+                <cost>"70"</cost>
+              </product>
+              <product>
+                <name>toaster</name>
+                <category>kitchen</category>
+                <price>30</price>
+                <cost>10</cost>
+              </product>
+              <product>
+                <name>blender</name>
+                <category>kitchen</category>
+                <price>50</price>
+                <cost>25</cost>
+              </product>
+              <product>
+                <name>socks</name>
+                <category>clothes</category>
+                <price>5</price>
+                <cost>2</cost>
+              </product>
+              <product>
+                <name>shirt</name>
+                <category>clothes</category>
+                <price>10</price>
+                <cost>3</cost>
+              </product>
+            </products>
+        ]]>
+        </store>
+    </setup>
+    <tearDown>
+        <remove-collection collection="/db/xquery3"/>
+    </tearDown>
+
+    <!-- the following tests are derived from http://www.w3.org/TR/xquery-30/#id-switch -->
+
+    <test output="text">
+        <task>A switch expression with all string case alternatives
+        </task>
+        <code><![CDATA[
+	xquery version "3.0";
+        let $animal := "Cat"
+        return
+	  switch ($animal)
+	    case "Cow" return "Moo"
+	    case "Cat" return "Meow"
+	    case "Duck" return "Quack"
+	    default return "What's that odd noise?"
+]]>
+        </code>
+        <expected>Meow</expected>
+    </test>
+    <test output="text">
+        <task>A switch with multiple case clauses with one return
+        </task>
+        <code><![CDATA[
+	xquery version "3.0";
+        let $animal := "Calf"
+        return
+	  switch ($animal)
+	    case "Cow" case "Calf" return "Moo"
+	    default return "No Bull?"
+]]>
+        </code>
+        <expected>Moo</expected>
+    </test>
+    <test output="text">
+        <task>A switch with an empty operand expression
+        </task>
+        <code><![CDATA[
+	xquery version "3.0";
+        let $animal := ()
+        return
+	  switch ($animal)
+	    case "Cow" case "Calf" return "Moo"
+	    default return "No Bull?"
+]]>
+        </code>
+        <expected>No Bull?</expected>
+    </test>
+    <test output="text">
+        <task>A switch with an empty operand expression
+        </task>
+        <code><![CDATA[
+xquery version "3.0";
+let $product := collection("/db/xquery3")//product[name = "toaster"]
+return
+    switch ($product/name)
+	    case "toaster" return $product/price/string()
+	    default return "No toaster"
+]]>
+        </code>
+        <expected>30</expected>
+    </test>
+
+    <test output="text">
+        <task>A switch with an empty case value
+        </task>
+        <code><![CDATA[
+    xquery version "3.1";
+
+    switch(1)
+    case 2[. eq 1] return "foo"
+    default return "bar"
+]]>
+        </code>
+        <expected>bar</expected>
+    </test>
+
+</TestSet>

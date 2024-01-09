@@ -1,0 +1,97 @@
+/**
+ * eXist-db Open Source Native XML Database
+ * Copyright (C) 2001 The eXist-db Authors
+ *
+ * info@exist-db.org
+ * http://www.exist-db.org
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+	font-size: 133%;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 100%;
+	text-align: right;
+}
+
+table {
+    width: 100%;
+}
+
+.group h1 {
+    font-size: 125%;
+    margin-bottom: 10px;
+	margin-top: 15px;
+	padding-top: 8px;
+	border-top: 1px solid black;
+}
+
+.group h2 {
+	font-size: 100%;
+	margin-bottom: 10px;
+}
+
+tr {
+    background-color: white;
+}
+
+th, td {
+    padding: 8px 1.5em 0 0;
+    font-size: 80%;
+    border: 1px solid #AAA;
+}
+
+th {
+    background-color: #C3D9FF;
+    text-align: left;
+}
+
+.desc {
+    padding: 5px 0 0 0;
+}
+
+.sequence {
+
+}
+
+.nested {
+    padding: 5px 0 0 20px;
+    background-color: #EEE;
+}
+
+.nested th {
+    background-color: #B4EEBD;
+}
+
+.timing {
+    text-align:right;
+}
+
+.thread {
+    margin-bottom: 15px;
+}

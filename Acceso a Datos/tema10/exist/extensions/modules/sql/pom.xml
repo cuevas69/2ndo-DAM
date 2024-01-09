@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.exist-db</groupId>
+        <artifactId>exist-parent</artifactId>
+        <version>6.2.0</version>
+        <relativePath>../../../exist-parent</relativePath>
+    </parent>
+
+    <artifactId>exist-sql</artifactId>
+    <packaging>jar</packaging>
+
+    <name>eXist-db SQL Module</name>
+    <description>eXist-db XQuery SQL Module</description>
+
+    <scm>
+        <connection>scm:git:https://github.com/exist-db/exist.git</connection>
+        <developerConnection>scm:git:https://github.com/exist-db/exist.git</developerConnection>
+        <url>scm:git:https://github.com/exist-db/exist.git</url>
+      <tag>eXist-6.2.0</tag>
+  </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.exist-db</groupId>
+            <artifactId>exist-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>4.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.1.214</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.evolvedbinary.j8fu</groupId>
+            <artifactId>j8fu</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.h-thurow</groupId>
+            <artifactId>simple-jndi</artifactId>
+            <version>0.23.0</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>false</filtering>
+            </testResource>
+            <testResource>
+                <directory>src/test/resources-filtered</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+
+        <plugins>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <configuration>
+                    <licenseSets>
+
+                        <licenseSet>
+                            <!--
+                                eXist-db's License
+                            -->
+                            <header>${project.parent.relativePath}/LGPL-21-license.template.txt</header>
+                            <excludes>
+                                <exclude>src/main/java/org/exist/xquery/modules/sql/GetConnectionFunction.java</exclude>
+                                <exclude>src/main/java/org/exist/xquery/modules/sql/CloseConnectionFunction.java</exclude>
+                                <exclude>src/main/java/org/exist/xquery/modules/sql/SQLModule.java</exclude>
+                                <exclude>src/test/resources/jndi.properties</exclude>
+                                <exclude>src/test/java/org/exist/xquery/modules/sql/ConnectionIT.java</exclude>
+                                <exclude>src/test/java/org/exist/xquery/modules/sql/ConnectionPoolIT.java</exclude>
+                                <exclude>src/test/java/org/exist/xquery/modules/sql/H2DatabaseResource.java</exclude>
+                                <exclude>src/test/java/org/exist/xquery/modules/sql/ImplicitConnectionCloseIT.java</exclude>
+                                <exclude>src/test/java/org/exist/xquery/modules/sql/JndiConnectionIT.java</exclude>
+                                <exclude>src/test/java/org/exist/xquery/modules/sql/Util.java</exclude>
+                            </excludes>
+                        </licenseSet>
+
+                        <licenseSet>
+                            <!--
+                                FDB backport to LGPL 2.1-only licensed code
+                            -->
+                            <header>${project.parent.relativePath}/FDB-backport-LGPL-21-ONLY-license.template.txt</header>
+                            <includes>
+                                <include>src/main/java/org/exist/xquery/modules/sql/GetConnectionFunction.java</include>
+                                <include>src/main/java/org/exist/xquery/modules/sql/CloseConnectionFunction.java</include>
+                                <include>src/main/java/org/exist/xquery/modules/sql/SQLModule.java</include>
+                                <include>src/test/resources/jndi.properties</include>
+                                <include>src/test/java/org/exist/xquery/modules/sql/ConnectionIT.java</include>
+                                <include>src/test/java/org/exist/xquery/modules/sql/ConnectionPoolIT.java</include>
+                                <include>src/test/java/org/exist/xquery/modules/sql/H2DatabaseResource.java</include>
+                                <include>src/test/java/org/exist/xquery/modules/sql/ImplicitConnectionCloseIT.java</include>
+                                <include>src/test/java/org/exist/xquery/modules/sql/JndiConnectionIT.java</include>
+                                <include>src/test/java/org/exist/xquery/modules/sql/Util.java</include>
+                            </includes>
+
+                        </licenseSet>
+
+                    </licenseSets>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.exist-db</groupId>
+    <artifactId>exist-parent</artifactId>
+    <version>6.2.0</version>
+    <packaging>pom</packaging>
+
+    <name>eXist-db Parent</name>
+    <description>eXist-db NoSQL Database</description>
+    <url>https://www.exist-db.org/</url>
+    <inceptionYear>2001</inceptionYear>
+
+    <organization>
+        <name>The eXist-db Open Source project</name>
+        <url>http://www.exist-db.org</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License, version 2.1</name>
+            <url>https://opensource.org/licenses/LGPL-2.1</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>The eXist-db Authors</name>
+            <organization>The eXist-db Open Source project</organization>
+            <url>https://www.exist-db.org</url>
+            <email>info@exist-db.org</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/exist-db/exist.git</connection>
+        <developerConnection>scm:git:https://github.com/exist-db/exist.git</developerConnection>
+        <url>scm:git:https://github.com/exist-db/exist.git</url>
+      <tag>eXist-6.2.0</tag>
+  </scm>
+
+    <mailingLists>
+        <mailingList>
+            <name>exist-open</name>
+            <!-- General purpose eXist users mailing list -->
+            <subscribe>https://lists.sourceforge.net/lists/listinfo/exist-open</subscribe>
+            <unsubscribe>https://lists.sourceforge.net/lists/listinfo/exist-open</unsubscribe>
+            <post>exist-open@lists.sourceforge.net</post>
+            <archive>http://sourceforge.net/p/exist/mailman/exist-open/</archive>
+            <otherArchives>
+                <otherArchive>http://exist-open.markmail.org/</otherArchive>
+                <otherArchive>http://blog.gmane.org/gmane.text.xml.exist/</otherArchive>
+            </otherArchives>
+        </mailingList>
+
+        <mailingList>
+            <name>exist-development</name>
+            <!-- Mailing list for the discussion of eXist development -->
+            <subscribe>https://lists.sourceforge.net/lists/listinfo/exist-development</subscribe>
+            <unsubscribe>https://lists.sourceforge.net/lists/listinfo/exist-development</unsubscribe>
+            <post>exist-development@lists.sourceforge.net</post>
+            <archive>http://sourceforge.net/p/exist/mailman/exist-development/</archive>
+            <otherArchives>
+                <otherArchive>http://exist-development.markmail.org/</otherArchive>
+            </otherArchives>
+        </mailingList>
+    </mailingLists>
+
+    <properties>
+        <project.build.source>1.8</project.build.source>
+        <project.build.target>1.8</project.build.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <project.copyright.name>The eXist-db Authors</project.copyright.name>
+
+        <contact.email>info@exist-db.org</contact.email>
+
+        <ant.version>1.10.13</ant.version>
+        <apache.httpcomponents.version>4.5.14</apache.httpcomponents.version>
+        <apache.httpcomponents.core.version>4.4.16</apache.httpcomponents.core.version>
+        <apache.xmlrpc.version>4.0.0</apache.xmlrpc.version>
+        <appassembler.version>2.1.0</appassembler.version>
+        <aspectj.version>1.9.8.M1</aspectj.version>
+        <exquery.distribution.version>0.2.1</exquery.distribution.version>
+        <icu.version>59.1</icu.version>
+        <izpack.version>5.1.3</izpack.version>
+        <jansi.version>2.4.0</jansi.version>
+        <jaxb.api.version>3.0.1</jaxb.api.version>
+        <jaxb.impl.version>3.0.2</jaxb.impl.version>
+        <jetty.version>9.4.50.v20221201</jetty.version>
+        <log4j.version>2.19.0</log4j.version>
+        <lucene.version>4.10.4</lucene.version>
+        <milton.version>1.8.1.3</milton.version>
+        <saxon.version>9.9.1-8</saxon.version>
+        <xmlresolver.version>4.6.4</xmlresolver.version>
+        <xmlunit.version>2.9.1</xmlunit.version>
+        <junit.version>4.13.2</junit.version>
+        <junit.jupiter.version>5.9.2</junit.jupiter.version>
+        <junit.vintage.version>5.9.2</junit.vintage.version>
+        <easymock.version>5.0.1</easymock.version>
+        <objenesis.version>3.3</objenesis.version>
+        <assertj.version>3.24.2</assertj.version>
+        <junit.toolbox.version>2.4</junit.toolbox.version>
+        <hamcrest.version>2.2</hamcrest.version>
+
+        <!-- needed just for the license-maven-plugin in this module! -->
+        <project.parent.relativePath>.</project.parent.relativePath>
+        
+        <!-- Sonar cloud-->
+        <sonar.projectKey>eXist-db_exist</sonar.projectKey>
+        <sonar.organization>exist-db</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>net.jcip</groupId>
+                <artifactId>jcip-annotations</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>3.1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.xml.bind</groupId>
+                <artifactId>jakarta.xml.bind-api</artifactId>
+                <version>${jaxb.api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.glassfish.jaxb</groupId>
+                <artifactId>jaxb-runtime</artifactId>
+                <version>${jaxb.impl.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>2.9.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ibm.icu</groupId>
+                <artifactId>icu4j</artifactId>
+                <version>${icu.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jctools</groupId>
+                <artifactId>jctools-core</artifactId>
+                <version>4.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.sf.saxon</groupId>
+                <artifactId>Saxon-HE</artifactId>
+                <version>${saxon.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.evolvedbinary.j8fu</groupId>
+                <artifactId>j8fu</artifactId>
+                <version>1.23.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.evolvedbinary.multilock</groupId>
+                <artifactId>multilock</artifactId>
+                <version>1.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>se.softhouse</groupId>
+                <artifactId>jargo</artifactId>
+                <version>0.4.14</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.11.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-jcl</artifactId>
+                <version>${log4j.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-jul</artifactId>
+                <version>${log4j.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j2-impl</artifactId>
+                <version>${log4j.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>2.0.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant</artifactId>
+                <version>${ant.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.evolvedbinary.thirdparty.org.apache.xmlrpc</groupId>
+                <artifactId>xmlrpc-common</artifactId>
+                <version>${apache.xmlrpc.version}</version>
+                <exclusions>
+                    <exclusion> <!-- conflicts with xerces 2.12.0 dependency on xml-apis version 1.4.01 -->
+                        <artifactId>xml-apis</artifactId>
+                        <groupId>xml-apis</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${apache.httpcomponents.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${apache.httpcomponents.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>${apache.httpcomponents.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>fluent-hc</artifactId>
+                <version>${apache.httpcomponents.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-annotations</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-deploy</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-jmx</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-jndi</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-plus</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-server</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-servlet</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-util</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-webapp</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>websocket-server</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <!-- server-side dependency for javax.websocket (JSR-356) support -->
+            <dependency>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>javax-websocket-server-impl</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-xml</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.sf.xmldb-org</groupId>
+                <artifactId>xmldb-api</artifactId>
+                <version>1.7.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>antlr</groupId>
+                <artifactId>antlr</artifactId>
+                <version>2.7.7</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.siemens.ct.exi</groupId>
+                <artifactId>exificient</artifactId>
+                <version>0.9.3</version>
+                <exclusions>
+                    <exclusion>  <!-- conflicts with xerces 2.12.0 dependency -->
+                        <groupId>xerces</groupId>
+                        <artifactId>xercesImpl</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.expath.packaging</groupId>
+                <artifactId>pkg-java</artifactId>
+                <version>2.0.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>4.4</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.exquery</groupId>
+                <artifactId>exquery-common</artifactId>
+                <version>${exquery.distribution.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.exist-db.thirdparty.com.ettrema</groupId>
+                <artifactId>milton-api</artifactId>
+                <version>${milton.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.exist-db.thirdparty.com.ettrema</groupId>
+                <artifactId>milton-client</artifactId>
+                <version>${milton.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.exist-db.thirdparty.com.ettrema</groupId>
+                <artifactId>milton-servlet</artifactId>
+                <version>${milton.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>it.unimi.dsi</groupId>
+                <artifactId>fastutil</artifactId>
+                <version>8.5.11</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.lacuna</groupId>
+                <artifactId>bifurcan</artifactId>
+                <version>0.2.0-alpha6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>xml-apis</groupId>
+                <artifactId>xml-apis</artifactId>
+                <version>1.4.01</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.xmlunit</groupId>
+                <artifactId>xmlunit-core</artifactId>
+                <version>${xmlunit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.xmlunit</groupId>
+                <artifactId>xmlunit-matchers</artifactId>
+                <version>${xmlunit.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <!-- we ourselves have a test scoped dependency on a newer hamcrest... see below! -->
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>hamcrest-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.xmlunit</groupId>
+                <artifactId>xmlunit-legacy</artifactId>
+                <version>${xmlunit.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+                <version>${junit.vintage.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <!-- scope>test</scope --> <!-- not just test scope, as needed for org.exist.test -->
+                <exclusions>
+                    <exclusion>
+                        <!-- we ourselves have a test scoped dependency on a newer hamcrest... see below! -->
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>hamcrest-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest</artifactId>
+                <version>${hamcrest.version}</version>
+                <!-- scope>test</scope --> <!-- not just test scope, as needed for org.exist.test -->
+            </dependency>
+
+            <!-- test dependencies -->
+            <dependency>
+                <groupId>com.googlecode.junit-toolbox</groupId>
+                <artifactId>junit-toolbox</artifactId>
+                <version>${junit.toolbox.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.easymock</groupId>
+                <artifactId>easymock</artifactId>
+                <version>${easymock.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.objenesis</groupId>
+                <artifactId>objenesis</artifactId>
+                <version>${objenesis.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.mycila</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>4.0.rc1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.owasp</groupId>
+                    <artifactId>dependency-check-maven</artifactId>
+                    <version>8.0.2</version>
+                    <configuration>
+                        <!-- Use Evolved Binary's mirror of nvd.nist.gov -->
+                        <cveUrlModified>https://nvd.mirror.evolvedbinary.com/feeds/json/cve/1.1/nvdcve-1.1-modified.json.gz</cveUrlModified>
+                        <cveUrlBase>https://nvd.mirror.evolvedbinary.com/feeds/json/cve/1.1/nvdcve-1.1-%d.json.gz</cveUrlBase>
+
+                        <archiveAnalyzerEnabled>false</archiveAnalyzerEnabled>
+                        <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+                        <autoconfAnalyzerEnabled>false</autoconfAnalyzerEnabled>
+                        <cmakeAnalyzerEnabled>false</cmakeAnalyzerEnabled>
+                        <cocoapodsAnalyzerEnabled>false</cocoapodsAnalyzerEnabled>
+                        <nodeAnalyzerEnabled>false</nodeAnalyzerEnabled>
+                        <nodeAuditAnalyzerEnabled>false</nodeAuditAnalyzerEnabled>
+                        <nexusAnalyzerEnabled>false</nexusAnalyzerEnabled>
+                        <nuspecAnalyzerEnabled>false</nuspecAnalyzerEnabled>
+                        <nugetconfAnalyzerEnabled>false</nugetconfAnalyzerEnabled>
+                        <pyDistributionAnalyzerEnabled>false</pyDistributionAnalyzerEnabled>
+                        <pyPackageAnalyzerEnabled>false</pyPackageAnalyzerEnabled>
+                        <rubygemsAnalyzerEnabled>false</rubygemsAnalyzerEnabled>
+                        <retireJsAnalyzerEnabled>false</retireJsAnalyzerEnabled>
+                        <swiftPackageManagerAnalyzerEnabled>false</swiftPackageManagerAnalyzerEnabled>
+
+                        <!-- clashes with Ant 1.10.7, see https://github.com/jeremylong/DependencyCheck/issues/1914 -->
+                        <skipSystemScope>true</skipSystemScope>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.code54.mojo</groupId>
+                    <artifactId>buildversion-plugin</artifactId>
+                    <version>1.0.3</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.1.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>xml-maven-plugin</artifactId>
+                    <version>1.0.2</version>
+                    <configuration>
+                        <transformerFactory>net.sf.saxon.TransformerFactoryImpl</transformerFactory>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>net.sf.saxon</groupId>
+                            <artifactId>Saxon-HE</artifactId>
+                            <version>${saxon.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.10.1</version>
+                    <configuration>
+                        <source>${project.build.source}</source>
+                        <target>${project.build.target}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.3.0</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            </manifest>
+                            <manifestEntries>
+                                <Build-Tag>${build-tag}</Build-Tag>
+                                <Git-Commit>${build-commit}</Git-Commit>
+                                <Git-Commit-Abbrev>${build-commit-abbrev}</Git-Commit-Abbrev>
+                                <Git-Commit-Timestamp>${build-tstamp}</Git-Commit-Timestamp>
+                                <Build-Version>${build-version}</Build-Version>
+                                <Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
+                                <Source-Repository>${project.scm.connection}</Source-Repository>
+                                <Description>${project.description}</Description>
+                                <Implementation-URL>${project.url}</Implementation-URL>
+                            </manifestEntries>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.2.1</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            </manifest>
+                            <manifestEntries>
+                                <Build-Tag>${build-tag}</Build-Tag>
+                                <Git-Commit>${build-commit}</Git-Commit>
+                                <Git-Commit-Abbrev>${build-commit-abbrev}</Git-Commit-Abbrev>
+                                <Git-Commit-Timestamp>${build-tstamp}</Git-Commit-Timestamp>
+                                <Build-Version>${build-version}</Build-Version>
+                                <Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
+                                <Source-Repository>${project.scm.connection}</Source-Repository>
+                                <Description>${project.description}</Description>
+                                <Implementation-URL>${project.url}</Implementation-URL>
+                            </manifestEntries>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.4.1</version>
+                    <configuration>
+                        <source>${project.build.source}</source>
+                        <archive>
+                            <manifest>
+                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            </manifest>
+                            <manifestEntries>
+                                <Build-Tag>${build-tag}</Build-Tag>
+                                <Git-Commit>${build-commit}</Git-Commit>
+                                <Git-Commit-Abbrev>${build-commit-abbrev}</Git-Commit-Abbrev>
+                                <Git-Commit-Timestamp>${build-tstamp}</Git-Commit-Timestamp>
+                                <Build-Version>${build-version}</Build-Version>
+                                <Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
+                                <Source-Repository>${project.scm.connection}</Source-Repository>
+                                <Description>${project.description}</Description>
+                                <Implementation-URL>${project.url}</Implementation-URL>
+                            </manifestEntries>
+                        </archive>
+                        <additionalJOptions>
+                            <additionalJOption>-Xmaxerrs</additionalJOption>
+                            <additionalJOption>65536</additionalJOption>
+                            <additionalJOption>-Xmaxwarns</additionalJOption>
+                            <additionalJOption>65536</additionalJOption>
+                        </additionalJOptions>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.8</version>
+                    <configuration>
+                        <propertyName>jacocoArgLine</propertyName>
+                        <excludes>
+                            <exclude>**/DeclScanner.*</exclude>
+                            <exclude>**/DeclScannerTokenTypes.*</exclude>
+                            <exclude>**/XQueryLexer.*</exclude>
+                            <exclude>**/XQueryParser.*</exclude>
+                            <exclude>**/XQueryTokenTypes.*</exclude>
+                            <exclude>**/XQueryTreeParser.*</exclude>
+                            <exclude>**/XQueryTreeParserTokenTypes.*</exclude>
+                            <exclude>**/XQDocLexer.*</exclude>
+                            <exclude>**/XQDocParser.*</exclude>
+                            <exclude>**/XQDocParserTokenTypes.*</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jarsigner-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M8</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.junit.jupiter</groupId>
+                            <artifactId>junit-jupiter-engine</artifactId>
+                            <version>${junit.jupiter.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.junit.vintage</groupId>
+                            <artifactId>junit-vintage-engine</artifactId>
+                            <version>${junit.vintage.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.glassfish.jaxb</groupId>
+                            <artifactId>jaxb-runtime</artifactId>
+                            <version>${jaxb.impl.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.objenesis</groupId>
+                            <artifactId>objenesis</artifactId>
+                            <version>${objenesis.version}</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <forkCount>2C</forkCount>
+                        <!--  Setting `reuseForks` to `true` greatly speeds up execution of the test suite.
+                              However it can make it hard to diagnose problems if tests leak state; If you experience
+                              such a problem you may want to set it to `false` whilst debugging -->
+                        <reuseForks>true</reuseForks>
+                        <argLine>@{jacocoArgLine} -XX:+IgnoreUnrecognizedVMOptions --illegal-access=debug --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.ref=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED -XX:StartFlightRecording=maxsize=5g,disk=true,dumponexit=true,settings=default,filename=${project.build.directory}/ -Dfile.encoding=${project.build.sourceEncoding}</argLine>
+                        <systemPropertyVariables>
+                            <user.country>UK</user.country>
+                            <user.language>en</user.language>
+                            <user.timezone>Europe/Berlin</user.timezone>
+                            <java.locale.providers>JRE,CLDR,SPI</java.locale.providers>
+                            <log4j.configurationFile>${project.build.testOutputDirectory}/log4j2.xml</log4j.configurationFile>
+                        </systemPropertyVariables>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-report-plugin</artifactId>
+                    <version>3.0.0-M8</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>3.0.0-M8</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.4.2</version>
+                    <configuration>
+                        <dependencyDetailsEnabled>false</dependencyDetailsEnabled>  <!-- TODO(AR) disabled due to slow `mvn site` build times -->
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>2.14.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.12.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.4.2</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            </manifest>
+                            <manifestEntries>
+                                <Build-Tag>${build-tag}</Build-Tag>
+                                <Git-Commit>${build-commit}</Git-Commit>
+                                <Git-Commit-Abbrev>${build-commit-abbrev}</Git-Commit-Abbrev>
+                                <Git-Commit-Timestamp>${build-tstamp}</Git-Commit-Timestamp>
+                                <Build-Version>${build-version}</Build-Version>
+                                <Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
+                                <Source-Repository>${project.scm.connection}</Source-Repository>
+                                <Description>${project.description}</Description>
+                                <Implementation-URL>${project.url}</Implementation-URL>
+                            </manifestEntries>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>3.4.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.3</version>
+                    <configuration>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <tagNameFormat>eXist-@{project.version}</tagNameFormat>
+                        <useReleaseProfile>true</useReleaseProfile>
+                        <releaseProfiles>exist-release</releaseProfiles>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>1.13.0</version>
+                    <configuration>
+                        <sign>true</sign>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>3.0.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>de.jutzig</groupId>
+                    <artifactId>github-release-plugin</artifactId>
+                    <version>1.4.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.eluder.coveralls</groupId>
+                    <artifactId>coveralls-maven-plugin</artifactId>
+                    <version>4.3.0</version>
+                    <configuration>
+                        <repoToken>${env.COVERALLS_TOKEN}</repoToken>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <inherited>true</inherited>
+                <configuration>
+                    <licenseSets>
+                        <licenseSet>
+                            <header>${project.parent.relativePath}/LGPL-21-license.template.txt</header>
+                            <excludes>
+                                <exclude>FDB-backport-LGPL-21-ONLY-license.template.txt</exclude>
+                                <exclude>FDB-backport-LGPL-21-ONLY-license.xml.template.txt</exclude>
+                                <exclude>LGPL-21-license.txt</exclude>
+                            </excludes>
+                        </licenseSet>
+                    </licenseSets>
+                    <headerDefinitions>
+                        <headerDefinition>${project.parent.relativePath}/xquery-license-style.xml</headerDefinition>
+                    </headerDefinitions>
+                    <mapping>
+                        <form>XML_STYLE</form>
+                        <g>SLASHSTAR_STYLE</g>
+                        <java>SLASHSTAR_STYLE</java>
+                        <plist>XML_STYLE</plist>
+                        <xconf>XML_STYLE</xconf>
+                        <xconf.init>XML_STYLE</xconf.init>
+                        <xq>XQUERY_STYLE</xq>
+                        <xql>XQUERY_STYLE</xql>
+                        <xqm>XQUERY_STYLE</xqm>
+                        <xsl>XML_STYLE</xsl>
+                        <xslt>XML_STYLE</xslt>
+                    </mapping>
+                    <failIfMissing>true</failIfMissing>
+                    <strictCheck>true</strictCheck>
+                    <properties>
+                        <copyright.year>${project.inceptionYear}</copyright.year>
+                        <copyright.name>${project.copyright.name}</copyright.name>
+                        <email>${contact.email}</email>
+                        <url>${project.organization.url}</url>
+                    </properties>
+                    <excludes>
+                        <exclude>LGPL-21-license.template.txt</exclude>
+                        <exclude>**/README.md</exclude>
+                        <exclude>**/README</exclude>
+                        <exclude>**/LICENSE</exclude>
+                        <exclude>**/*.xar</exclude>
+                    </excludes>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>check-headers</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>analyze</id>
+                        <goals>
+                            <goal>analyze-only</goal>
+                        </goals>
+                        <configuration>
+                            <failOnWarning>true</failOnWarning>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.code54.mojo</groupId>
+                <artifactId>buildversion-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>set-properties</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default-prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/DeclScanner.*</exclude>
+                                <exclude>**/DeclScannerTokenTypes.*</exclude>
+                                <exclude>**/XQueryLexer.*</exclude>
+                                <exclude>**/XQueryParser.*</exclude>
+                                <exclude>**/XQueryTokenTypes.*</exclude>
+                                <exclude>**/XQueryTreeParser.*</exclude>
+                                <exclude>**/XQueryTreeParserTokenTypes.*</exclude>
+                                <exclude>**/XQDocLexer.*</exclude>
+                                <exclude>**/XQDocParser.*</exclude>
+                                <exclude>**/XQDocParserTokenTypes.*</exclude>
+                            </excludes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>**/DeclScanner.*</exclude>
+                        <exclude>**/DeclScannerTokenTypes.*</exclude>
+                        <exclude>**/XQueryLexer.*</exclude>
+                        <exclude>**/XQueryParser.*</exclude>
+                        <exclude>**/XQueryTokenTypes.*</exclude>
+                        <exclude>**/XQueryTreeParser.*</exclude>
+                        <exclude>**/XQueryTreeParserTokenTypes.*</exclude>
+                        <exclude>**/XQDocLexer.*</exclude>
+                        <exclude>**/XQDocParser.*</exclude>
+                        <exclude>**/XQDocParserTokenTypes.*</exclude>
+                    </excludes>
+                </configuration>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <!-- select non-aggregate reports -->
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <configuration>
+                    <aggregate>true</aggregate>
+                </configuration>
+            </plugin>
+
+            <!-- TODO(AR) disabled due to slow `mvn site` build times -->
+            <!-- plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin -->
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>dependency-updates-report</report>
+                            <report>plugin-updates-report</report>
+                            <report>property-updates-report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <repositories>
+        <repository>
+            <id>exist-db-snapshots</id>
+            <name>Evolved Binary - eXist-db Snapshots</name>
+            <url>https://repo.evolvedbinary.com/repository/exist-db-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>exist-db</id>
+            <name>Evolved Binary - eXist-db Releases</name>
+            <url>https://repo.evolvedbinary.com/repository/exist-db/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>clojars.org</id>
+            <url>https://clojars.org/repo</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>exist-db</id>
+            <name>Evolved Binary - eXist-db Releases</name>
+            <url>https://repo.evolvedbinary.com/repository/exist-db/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>exist-db-snapshots</id>
+            <name>Evolved Binary - eXist-db Snapshots</name>
+            <url>https://repo.evolvedbinary.com/repository/exist-db-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>exist-db-snapshots</id>
+            <name>Evolved Binary - eXist-db Snapshots</name>
+            <url>https://repo.evolvedbinary.com/repository/exist-db-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <name>Nexus Release Repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>java8-runtime-compatibility</id>
+            <!--
+                By default, this sets the `-release 8` flag to javac
+                on JDK 9+, so that the produced class files
+                are runtime compatible with Java 8.
+
+                See - https://github.com/eclipse/jetty.project/issues/3244
+
+                You can disable at build time, by using the mvn
+                args: `-P !java8-runtime-compatibility`
+            -->
+            <activation>
+                <jdk>[1.9,)</jdk>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <configuration>
+                            <release>8</release>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <!-- NOTE: this is used from the maven-release-plugin -->
+            <id>exist-release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                                <configuration>
+                                    <keyname>${existdb.release.key}</keyname>
+                                    <defaultKeyring>false</defaultKeyring>
+                                    <publicKeyring>${existdb.release.public-keyfile}</publicKeyring>
+                                    <secretKeyring>${existdb.release.private-keyfile}</secretKeyring>
+                                    <passphrase>${existdb.release.key.passphrase}</passphrase>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+    </profiles>
+
+</project>

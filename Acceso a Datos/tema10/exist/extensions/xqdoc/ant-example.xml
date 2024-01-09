@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<project basedir="." default="docs" name="test xqdoc tasks">
+
+	<property name="server" value="xmldb:exist://localhost:8080/exist/xmlrpc"/>
+	
+	<property name="top.dir" value="../.."/>
+	
+	<path id="classpath.core">
+		<fileset dir="${top.dir}/lib/core">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="./lib">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${top.dir}/tools/ant/lib">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement path="${top.dir}/lib/extensions/exist-xqdoc.jar"/>
+		<pathelement path="${top.dir}/exist.jar"/>
+		<pathelement path="${top.dir}/exist-optional.jar"/>
+	</path>
+	
+	<typedef resource="org/exist/xqdoc/ant/antlib.xml" uri="http://exist-db.org/xqdoc">
+		<classpath refid="classpath.core"/>
+	</typedef>
+
+	<target name="docs" xmlns:xqdoc="http://exist-db.org/xqdoc">
+		<xqdoc:scan uri="${server}/db/xqdoc" initdb="true" createcollection="true"
+			moduleuri="resource:org/exist/xquery/lib/kwic.xql"/>
+		<xqdoc:scan uri="${server}/db/xqdoc" initdb="true" createcollection="true"
+			failonerror="false">
+			<fileset dir="${top.dir}/samples/xquery">
+				<include name="*.xq"/>
+			</fileset>
+		</xqdoc:scan>
+	</target>
+
+</project>

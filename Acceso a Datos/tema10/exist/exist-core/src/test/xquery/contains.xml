@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<TestSet>
+    <testName>fn contains related tests</testName>
+    <description>
+        <p>Test the contains related functions</p>
+        <author>James Fuller</author>
+    </description>
+    <setup>
+        <create-collection parent="/db" name="contains-test"/>
+        <store collection="/db/contains-test" name="test.xml"><![CDATA[
+            <test>
+                <para>a paragraph with text</para>
+            </test>
+        ]]></store>
+    </setup>
+    <tearDown>
+        <remove-collection collection="/db/contains-test"/>
+    </tearDown>
+    <test output="text">
+        <task>fn:contains1</task>
+        <code>fn:contains('exist', 'e')</code>
+        <expected>true</expected>
+    </test>
+    <test output="text">
+        <task>fn:starts-with1</task>
+        <code>fn:starts-with('exist', 'e')</code>
+        <expected>true</expected>
+    </test>
+    <test output="text">
+        <task>fn:starts-with2</task>
+        <code>fn:starts-with(' exist', 'e')</code>
+        <expected>false</expected>
+    </test>
+    <test output="text">
+        <task>fn:ends-with1</task>
+        <code>fn:ends-with('exist', 't')</code>
+        <expected>true</expected>
+    </test>
+    <test output="text">
+        <task>fn:ends-with2</task>
+        <code>fn:ends-with('exist ', 't')</code>
+        <expected>false</expected>
+    </test>
+
+    
+</TestSet>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<TestSet>
+    <testName>fn regex related tests</testName>
+    <description>
+        <p>Test the regex related functions</p>
+        <author>James Fuller</author>
+    </description>
+    <setup>
+        <create-collection parent="/db" name="module-test"/>
+<store collection="/db/module-test" type="application/xquery" name="test1.xqm">xquery version "1.0";
+module namespace test1='http://example.com/test-1';
+declare variable $test1:var1 := "test1:var1 success";    
+declare function test1:test() {
+    'test1 function'
+};</store>
+
+<store collection="/db/module-test" type="application/xquery" name="test2.xqm">xquery version "1.0";
+module namespace test2='http://example.com/test-2';
+import module namespace test1='http://example.com/test-1' at 'xmldb:exist:///db/module-test/test1.xqm';
+declare function test2:test() {
+    'test2 function'
+};</store>
+
+<store collection="/db/module-test" type="application/xquery" name="test3.xqm">xquery version "1.0";
+module namespace test3='http://example.com/test-3';
+import module namespace test1='http://example.com/test-1' at 'xmldb:exist:///db/module-test/test1.xqm';
+declare function test3:test() {
+    'test3 function'
+};</store>
+
+<store collection="/db/module-test" type="application/xquery" name="test4.xqm">xquery version "1.0";
+module namespace test4='http://example.com/test-4';
+declare variable $test4:var1 := "test4:var1 success";
+import module namespace test1='http://example.com/test-1' at 'xmldb:exist:///db/module-test/test1.xqm';
+declare function test4:test() {
+    concat('test4 function: ',$test4:var1)
+};</store>
+
+        <store collection="/db/module-test" type="application/xquery" name="test5.xqm">xquery version "1.0";
+module namespace test5='http://example.com/test-5';
+declare function test5:fib-recur($n as xs:integer) as xs:integer? {
+    if ($n lt 0) then ()
+    else if ($n = 0)  then 0
+    else if ($n=1)   then 1
+    else test5:fib-recur($n - 1)  + test5:fib-recur($n - 2)
+};
+</store>
+    </setup>
+    <tearDown>
+        <remove-collection collection="/db/module-test"/>
+    </tearDown>
+
+
+    <test output="text">
+        <task>test simple importing modules1</task>
+        <code>util:eval("
+           import module namespace test3='http://example.com/test-3' at 'xmldb:exist:///db/module-test/test3.xqm';
+           test3:test()
+            ")</code>
+        <expected>test3 function</expected>
+    </test>
+
+    <test output="text">
+        <task>test importing modules2</task>
+        <code>util:eval("
+           import module namespace test2='http://example.com/test-2' at 'xmldb:exist:///db/module-test/test2.xqm';
+           import module namespace test3='http://example.com/test-3' at 'xmldb:exist:///db/module-test/test3.xqm';
+           test3:test()
+            ")</code>
+        <expected>test3 function</expected>
+    </test>
+    <test output="text">           
+        <task>test importing modules3 with declared var</task>
+        <code>util:eval("
+            import module namespace test2='http://example.com/test-2' at 'xmldb:exist:///db/module-test/test2.xqm';
+            import module namespace test3='http://example.com/test-3' at 'xmldb:exist:///db/module-test/test3.xqm';
+            import module namespace test4='http://example.com/test-4' at 'xmldb:exist:///db/module-test/test4.xqm';
+
+               test4:test()
+
+            ")</code>
+        <expected>test4 function: test4:var1 success</expected>
+    </test>
+    <test output="text">
+        <task>test importing modules4 with declared var</task>
+        <code>util:eval("
+            import module namespace test1='http://example.com/test-1' at 'xmldb:exist:///db/module-test/test1.xqm';
+            import module namespace test3='http://example.com/test-3' at 'xmldb:exist:///db/module-test/test3.xqm';
+            import module namespace test4='http://example.com/test-4' at 'xmldb:exist:///db/module-test/test4.xqm';
+
+               test4:test()
+
+            ")</code>
+        <expected>test4 function: test4:var1 success</expected>
+    </test>
+
+     <!--test output="text">
+        <task>test importing modules5 with recursive function</task>
+        <code>util:eval("
+            import module namespace test1='http://example.com/test-1' at 'xmldb:exist:///db/module-test/test1.xqm';
+            import module namespace test5='http://example.com/test-5' at 'xmldb:exist:///db/module-test/test5.xqm';
+
+               test5:fib-recur(10)
+
+            ")</code>
+        <expected>55</expected>
+    </test-->
+
+</TestSet>

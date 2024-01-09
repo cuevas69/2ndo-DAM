@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<TestSet>
+    <testName>XInclude tests</testName>
+    <description>
+        <p>Test XInclude functionality used from XQuery</p>
+        <author>Wolfgang Meier</author>
+    </description>
+    <setup>
+        <create-collection parent="/db" name="test"/>
+        <store collection="/db/test" name="include.xml"><![CDATA[
+            <para>Included paragraph</para>
+        ]]></store>
+        <store collection="/db/test" name="disclaimer.xml"><![CDATA[
+            <disclaimer>
+                <p xml:id="statement">The opinions presented herein represent those 
+                    of the individual and should not be interpreted as the official 
+                    policy endorsed by this organization.</p>
+                
+                <comment xmlns="http://test.org">
+                    This comment uses a different default namespace.
+                </comment>
+            </disclaimer>
+        ]]></store>
+        <store collection="/db/test" name="test1.xml"><![CDATA[
+            <book xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Book Title</title>
+                <xi:include href="include.xml">
+                    <xi:fallback><p>Not found</p></xi:fallback>
+                </xi:include>
+            </book>
+        ]]></store>
+        <store collection="/db/test" name="test2.xml"><![CDATA[
+            <book xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Book Title</title>
+                <xi:include href="disclaimer.xml" xpointer="statement">
+                    <xi:fallback><p>Not found</p></xi:fallback>
+                </xi:include>
+            </book>
+        ]]></store>
+        <store collection="/db/test" name="test3.xml"><![CDATA[
+            <book xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Book Title</title>
+                <xi:include href="disclaimer.xml" xpointer="xpointer(//comment:comment)xmlns(comment=http://test.org)">
+                    <xi:fallback><p>Not found</p></xi:fallback>
+                </xi:include>
+            </book>
+        ]]></store>
+        <store collection="/db/test" name="testvars.xq" type="application/xquery"><![CDATA[
+            declare variable $var1 external;
+            declare variable $var2 external;
+            
+            <ul>
+                <li>$var1 = {$var1}</li>
+                <li>$var2 = {$var2}</li>
+            </ul>
+        ]]></store>
+        <store collection="/db/test" name="test4.xml"><![CDATA[
+            <book xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Book Title</title>
+                <xi:include href="testvars.xq?var1=Hello&amp;var2=World">
+                    <xi:fallback><p>Not found</p></xi:fallback>
+                </xi:include>
+            </book>
+        ]]></store>
+        <store collection="/db/test" name="test5.xml"><![CDATA[
+            <book xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Book Title</title>
+                <xi:include href="blablabla.xml">
+                    <xi:fallback><p>Not found</p></xi:fallback>
+                </xi:include>
+            </book>
+        ]]></store>
+        <store collection="/db/test" name="test6.xml"><![CDATA[
+            <book xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Book Title</title>
+                <xi:include href="http://data.exist-db.org/testdata/disclaimer.xml">
+                    <xi:fallback><p>Not found</p></xi:fallback>
+                </xi:include>
+            </book>
+        ]]></store>
+        <store collection="/db/test" name="test7.xml"><![CDATA[
+            <book xmlns:xi="http://www.w3.org/2001/XInclude">
+                <title>Book Title</title>
+                <xi:include href="http://data.exist-db.org/testdata/disclaimer.xml"
+                    xpointer="xpointer(//comment:comment)xmlns(comment=http://test.org)">
+                    <xi:fallback><p>Not found</p></xi:fallback>
+                </xi:include>
+            </book>
+        ]]></store>
+        <store collection="/db/test" name="test.xsl">
+            <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+                <xsl:template match="node()|@*">
+                    <xsl:copy>
+                        <xsl:apply-templates select="node()|@*"/>
+                    </xsl:copy>
+                </xsl:template>
+            </xsl:stylesheet>
+        </store>
+    </setup>
+    <tearDown>
+        <remove-collection collection="/db/test"/>
+    </tearDown>
+    <variable name="input1"><![CDATA[
+        <book xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Book Title</title>
+            <xi:include href="/db/test/disclaimer.xml" xpointer="xpointer(//comment:comment)xmlns(comment=http://test.org)">
+                <xi:fallback><p>Not found</p></xi:fallback>
+            </xi:include>
+        </book>
+    ]]></variable>
+    <test>
+        <task>Simple XInclude</task>
+        <code>util:expand(doc("/db/test/test1.xml"))</code>
+        <xpath>//para[. = 'Included paragraph']</xpath>
+    </test>
+    <test>
+        <task>Simple XInclude using fragment id</task>
+        <code>util:expand(doc("/db/test/test2.xml"))</code>
+        <xpath>//p[contains(., 'opinions')]</xpath>
+    </test>
+    <test>
+        <task>Simple XInclude using XPointer</task>
+        <code>util:expand(doc("/db/test/test3.xml"))</code>
+        <xpath xmlns:comment="http://test.org">//comment:comment[contains(., 'namespace')]</xpath>
+    </test>
+    <test>
+        <task>Simple XInclude with parameters</task>
+        <code>util:expand(doc("/db/test/test4.xml"))</code>
+        <xpath>//li</xpath>
+    </test>
+    <test>
+        <task>Simple XInclude with fallback</task>
+        <code>util:expand(doc("/db/test/test5.xml"))</code>
+        <xpath>//p[. = 'Not found']</xpath>
+    </test>
+    <test ignore="true">
+        <task>Simple XInclude loads external doc (requires Internet access)</task>
+        <code>util:expand(doc("/db/test/test6.xml"))</code>
+        <xpath>//p[contains(., 'opinions')]</xpath>
+    </test>
+    <test ignore="true">
+        <task>Simple XInclude on external doc using XPointer (requires Internet access)</task>
+        <code>util:expand(doc("/db/test/test7.xml"))</code>
+        <xpath xmlns:comment="http://test.org">//comment:comment[contains(., 'namespace')]</xpath>
+    </test>
+    <test>
+        <task>In memory doc: simple XInclude using XPointer</task>
+        <code>util:expand($input1)</code>
+        <xpath xmlns:comment="http://test.org">//comment:comment[contains(., 'namespace')]</xpath>
+    </test>
+    <!-- XSLT transform tests -->
+    <test output="text">
+        <task>XInclude applied before XSLT step</task>
+        <code><![CDATA[
+            let $stylesheet := doc("/db/test/test.xsl")
+            return
+                transform:transform(doc('/db/test/test1.xml'), $stylesheet, (), (),
+                    "xinclude-path=xmldb:exist:///db/test")
+        ]]></code>
+        <xpath>//para[. = 'Included paragraph']</xpath>
+    </test>
+    <test output="text">
+        <task>XInclude applied before XSLT step 2</task>
+        <code><![CDATA[
+            let $stylesheet := doc("/db/test/test.xsl")
+            return
+                transform:transform(doc('/db/test/test1.xml'), $stylesheet, ())
+        ]]></code>
+        <xpath>//para[. = 'Included paragraph']</xpath>
+    </test>
+</TestSet>

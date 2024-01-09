@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<TestSet>
+    <testName>Expath Repo tests</testName>
+    <description>
+        <p></p>
+        <author>James Fuller</author>
+    </description>
+    <setup>
+        <create-collection parent="/db" name="expathrepo-test"/>
+        <store collection="/db/expathrepo-test" name="test.xml"><![CDATA[
+<test>some test input</test>
+        ]]></store>
+    </setup>
+    <tearDown>
+        <remove-collection collection="/db/expathrepo-test"/>
+    </tearDown>
+    <test output="text">
+        <task>List</task>
+        <code>contains(repo:list(),'fxsl-1.0')</code>
+        <expected>false</expected>
+    </test>
+    
+    <!--test output="text">
+        <task>List</task>
+        <code>repo:list()</code>
+        <expected>true</expected>
+    </test>
+    <test output="text">
+        <task>Install</task>
+        <code>repo:install('http://127.0.0.1:8088/exist/repo/packages/fxsl-1.0.xar')</code>
+        <expected>true</expected>
+    </test>    
+    <test output="text">
+        <task>Remove</task>
+        <code>repo:remove('fxsl-1.0')</code>
+        <expected>true</expected>
+    </test-->
+
+    <!--test output="text">
+        <task>Locate</task>
+        <code>repo:locate()</code>
+        <expected></expected>
+    </test>
+    <test output="text">
+        <task>Create</task>
+        <code>repo:create()</code>
+        <expected></expected>
+    </test-->
+</TestSet>

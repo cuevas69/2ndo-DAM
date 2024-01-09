@@ -1,0 +1,246 @@
+<!--
+
+    eXist-db Open Source Native XML Database
+    Copyright (C) 2001 The eXist-db Authors
+
+    info@exist-db.org
+    http://www.exist-db.org
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
+<TestSet>
+    <testName>tests for self axis</testName>
+    <description>
+        <p>tests for selection of nodes with self axis, both 
+            <ul>
+                <li>abbreviated (.) and full (self::)</li>
+                <li>in location step and predicate</li>
+                <li>in 'bare' and parenthesized contexts</li>
+            </ul>
+        </p>
+        <author>Ron Van den Branden</author>
+    </description>
+    <setup>
+        <create-collection parent="/db" name="coll"/>
+        <store collection="/db/coll" name="test.xml">
+            <test>test</test>
+        </store>
+        <store collection="/db/coll" name="test2.xml">
+            <p>Hello <q>world!</q></p>
+        </store>
+    </setup>
+    <tearDown>
+        <remove-collection collection="/db/coll"/>
+    </tearDown>
+    <test output="xml">
+        <task>[bare context] self axis in location step, abbreviated</task>
+        <code><![CDATA[
+            collection('/db/coll')//test/.
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[bare context] self axis in location step, full</task>
+        <code><![CDATA[
+            collection('/db/coll')//test/self::*
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[bare context] self axis in location step, full with name test</task>
+        <code><![CDATA[
+            collection('/db/coll')//test/self::test
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[bare context] self axis in predicate, abbreviated</task>
+        <code><![CDATA[
+            collection('/db/coll')//test[.]
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[bare context] self axis in predicate, full</task>
+        <code><![CDATA[
+            collection('/db/coll')//test[self::*]
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[bare context] self axis in predicate, full with name test</task>
+        <code><![CDATA[
+            collection('/db/coll')//test[self::test]
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+<!-- -->
+    <test output="xml">
+        <task>[parenthesized context] self axis in location step, abbreviated</task>
+        <code><![CDATA[
+            (collection('/db/coll')//test/.)
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[parenthesized context] self axis in location step, full</task>
+        <code><![CDATA[
+            (collection('/db/coll')//test/self::*)
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[parenthesized context] self axis in location step, full with name test</task>
+        <code><![CDATA[
+            (collection('/db/coll')//test/self::test)
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[parenthesized context] self axis in predicate, abbreviated</task>
+        <code><![CDATA[
+            (collection('/db/coll')//test)[.]
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[parenthesized context] self axis in predicate, full</task>
+        <code><![CDATA[
+            (collection('/db/coll')//test)[self::*]
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>[parenthesized context] self axis in predicate, full with name test</task>
+        <code><![CDATA[
+            (collection('/db/coll')//test)[self::test]
+            ]]></code>
+        <expected>
+            <test>test</test>
+        </expected>
+    </test>  
+    <test output="text">
+        <task>[filter context] use self within filter step</task>
+        <code>
+            let $values := 1 to 10
+            return $values[. = 5]
+        </code>
+        <expected>5</expected>
+    </test>
+    <test output="text">
+        <task>[filter context] use self in function call within filter step</task>
+        <code>
+            let $values := (3,4,6,6 ,2,7, 3,1,2)
+            return $values[index-of($values, .)[2]]
+        </code>
+        <expected>6 3 2</expected>
+    </test>
+    <test output="xml">
+        <task>Self axis step used inside enclosed expression</task>
+        <code><![CDATA[
+            let $data :=
+            <root>
+                <elem>One</elem>
+            </root>
+            return
+            $data/elem/<data>{.,<a>1</a>}</data>
+        ]]></code>
+        <expected>
+            <data>
+                <elem>One</elem>
+                <a>1</a>
+            </data>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>Context item should not be touched by nested let clause</task>
+        <code><![CDATA[
+        let $xml := <test><title>title</title></test>
+        return
+            $xml/title/<test>
+                {
+                    let $title := ./text()
+                    return
+                        let $text := text()
+                        return
+                            $text
+                }
+                </test>]]></code>
+        <expected>
+            <test>title</test>
+        </expected>
+    </test>
+    <test output="xml">
+        <task>Self axis test after wildcard test</task>
+        <code><![CDATA[
+        let $x := <x><y/><z/></x>
+        return
+            $x/y/following-sibling::element()[1]/self::z ]]></code>
+        <expected><z/></expected>
+    </test>
+    <test output="xml">
+        <task>Self axis test after wildcard test inside filter</task>
+        <code><![CDATA[
+        let $x := <x><y/><z/></x>
+        return
+            $x/y[following-sibling::element()[1]/self::z] ]]></code>
+        <expected><y/></expected>
+    </test>
+    <test output="xml">
+        <task>Self axis wildcard test after wildcard test inside filter</task>
+        <code><![CDATA[
+        let $x := <x><y/><z/></x>
+        return
+            $x/y[following-sibling::element()[1]/self::*] ]]></code>
+        <expected><y/></expected>
+    </test>
+    <test output="text">
+        <task>If expression with boolean "or" used with bang operator</task>
+        <code>
+        let $doc := collection('/db/coll')/p
+        return
+            $doc/node() ! (
+                if (ancestor::p or ancestor::x) then
+                    "P"
+                else
+                    .
+            )
+        </code>
+        <expected>P P</expected>
+    </test>
+</TestSet>
