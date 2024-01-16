@@ -1,0 +1,8 @@
+Opinion: nice, bad, good, okey
+Size: fat, slim
+Shape: big, large, small
+Age: young, adult
+Colour: blue, yellow, green
+Origin: French, English
+Material: diamond, gold, silver
+Purpose:
