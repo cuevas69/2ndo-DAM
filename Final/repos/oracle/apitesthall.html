@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de Fakemons</title>
+  <!-- Agregar la referencia a Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .fakemon {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer; /* Hacer que el cursor sea un puntero al pasar por encima */
+    }
+    .fakemon img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .modal-content {
+      border-radius: 0; /* Hacer que las esquinas del modal sean cuadradas */
+    }
+    .pokedex {
+      text-align: left;
+    }
+    .pokedex img {
+      max-width: 200px;
+      max-height: 200px;
+      margin: 10px;
+    }
+    .attribute {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Listado de Fakemons</h1>
+
+<!-- Buscador único -->
+<label for="search">Buscar por ID o Nombre:</label>
+<input type="text" id="search" oninput="search()">
+
+<!-- Contenedor para mostrar la información detallada del Fakemon seleccionado -->
+<div id="selectedFakemon" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="selectedFakemonTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="selectedFakemonTitle">Detalles del Fakemon</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="selectedFakemonBody"></div>
+    </div>
+  </div>
+</div>
+
+<div id="fakemonList" class="row"></div>
+
+<script>
+let allFakemons = []; // Almacena todos los Fakemons originales
+
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    // Hacer la solicitud a la API para obtener todos los Fakemons
+    const response = await fetch('https://poke-api-logia.vercel.app/api/fakemon');
+    
+    if (!response.ok) {
+      throw new Error('La solicitud a la API no fue exitosa');
+    }
+
+    allFakemons = await response.json();
+    
+    // Mostrar todos los Fakemons al cargar la página
+    displayFakemons(allFakemons, document.getElementById('fakemonList'));
+  } catch (error) {
+    console.error('Error al obtener los Fakemons', error);
+  }
+});
+
+// Función para buscar en tiempo real
+function search() {
+  const searchText = document.getElementById('search').value;
+
+  // Filtrar Fakemons en tiempo real
+  const filteredFakemons = allFakemons.filter(fakemon => {
+    const idMatch = fakemon.id.toString().includes(searchText);
+    const nameMatch = fakemon.name.toLowerCase().includes(searchText.toLowerCase());
+
+    return idMatch || nameMatch;
+  });
+
+  // Mostrar los Fakemons filtrados
+  displayFakemons(filteredFakemons, document.getElementById('fakemonList'));
+
+  // Limpiar el contenedor de detalles al buscar
+  clearSelectedFakemon();
+}
+
+// Función para mostrar Fakemons en el DOM
+function displayFakemons(fakemons, container) {
+  clearFakemons();
+
+  // Ocultar el contenedor de detalles al mostrar la lista de Fakemons
+  document.getElementById('selectedFakemon').style.display = 'none';
+  
+  fakemons.forEach(fakemon => {
+    const fakemonDiv = createFakemonCard(fakemon);
+    container.appendChild(fakemonDiv);
+  });
+}
+
+// Función para mostrar un Fakemon en el DOM
+function createFakemonCard(fakemon) {
+  const fakemonDiv = document.createElement('div');
+  fakemonDiv.classList.add('fakemon', 'col-md-4');
+
+  // Crear card de Bootstrap
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  // Mostrar la imagen en el cuerpo de la tarjeta
+  const cardBody = document.createElement('div');
+  cardBody.classList.add('card-body');
+  const fakemonImage = document.createElement('img');
+  fakemonImage.src = '/fakemonico/' + fakemon.id + '.png';  // Modificación aquí
+  fakemonImage.alt = fakemon.name;
+  fakemonImage.classList.add('card-img-top');
+  cardBody.appendChild(fakemonImage);
+
+  // Mostrar el nombre y tipos en el pie de la tarjeta
+  const cardFooter = document.createElement('div');
+  cardFooter.classList.add('card-footer');
+  const fakemonName = document.createElement('h5');
+  fakemonName.classList.add('card-title');
+  fakemonName.textContent = fakemon.name;
+  cardFooter.appendChild(fakemonName);
+
+  // Mostrar los tipos
+  const fakemonTypes = document.createElement('p');
+  fakemonTypes.classList.add('card-text');
+  fakemonTypes.textContent = `Type 1: ${fakemon.type1}, Type 2: ${fakemon.type2 || 'N/A'}`;
+  cardFooter.appendChild(fakemonTypes);
+
+  card.appendChild(cardBody);
+  card.appendChild(cardFooter);
+  fakemonDiv.appendChild(card);
+
+  // Agregar evento de clic para mostrar detalles del Fakemon
+  fakemonDiv.addEventListener('click', () => showFakemonDetails(fakemon));
+
+  return fakemonDiv;
+}
+
+// Función para mostrar detalles del Fakemon en un modal
+function showFakemonDetails(fakemon) {
+  const selectedFakemonBody = document.getElementById('selectedFakemonBody');
+  selectedFakemonBody.innerHTML = ''; // Limpiar el contenido anterior
+
+  // Crear card de Bootstrap para los detalles del Fakemon
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  // Mostrar la imagen en el cuerpo de la tarjeta
+  const cardBody = document.createElement('div');
+  cardBody.classList.add('card-body', 'pokedex');
+  const fakemonImage = document.createElement('img');
+  fakemonImage.src = fakemon.image;
+  fakemonImage.alt = fakemon.name;
+  fakemonImage.classList.add('card-img-top');
+  cardBody.appendChild(fakemonImage);
+
+  // Mostrar los atributos del Fakemon
+  for (const [key, value] of Object.entries(fakemon)) {
+    const attributeDiv = document.createElement('div');
+    attributeDiv.classList.add('attribute');
+    const attributeName = document.createElement('strong');
+    attributeName.textContent = `${key}: `;
+    attributeDiv.appendChild(attributeName);
+
+    const attributeValue = document.createElement('span');
+    attributeValue.textContent = Array.isArray(value) ? value.join(', ') : value;
+    attributeDiv.appendChild(attributeValue);
+
+    cardBody.appendChild(attributeDiv);
+  }
+
+  card.appendChild(cardBody);
+  selectedFakemonBody.appendChild(card);
+
+  // Mostrar el modal
+  $('#selectedFakemon').modal('show');
+}
+
+// Función para limpiar los Fakemons anteriores
+function clearFakemons() {
+  const fakemonListDiv = document.getElementById('fakemonList');
+  fakemonListDiv.innerHTML = '';
+}
+
+// Función para limpiar el contenedor de detalles
+function clearSelectedFakemon() {
+  const selectedFakemonBody = document.getElementById('selectedFakemonBody');
+  selectedFakemonBody.innerHTML = '';
+}
+
+// Función para limpiar los buscadores y mostrar todos los Pokémon
+function clearAndShowAll() {
+  document.getElementById('search').value = '';
+  displayFakemons(allFakemons, document.getElementById('fakemonList'));
+}
+</script>
+
+<!-- Agregar la referencia a Bootstrap JS y Popper.js (necesarios para algunas funciones de Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

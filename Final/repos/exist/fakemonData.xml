@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fakemons>
+    <fakemon>
+        <id>1</id>
+        <image>fakemonico/001.png</image>
+        <name>Plantiger</name>
+        <type1>GRASS</type1>
+        <type2/>
+        <!-- Agrega los demás campos según la estructura -->
+    </fakemon>
+    <fakemon>
+        <id>2</id>
+        <image>fakemonico/002.png</image>
+        <name>Bladeger</name>
+        <type1>GRASS</type1>
+        <type2>STEEL</type2>
+        <!-- Agrega los demás campos según la estructura -->
+    </fakemon>
+    <fakemon>
+        <id>3</id>
+        <image>fakemonico/003.png</image>
+        <name>Leafang</name>
+        <type1>GRASS</type1>
+        <type2>STEEL</type2>
+        <!-- Agrega los demás campos según la estructura -->
+    </fakemon>
+    <!-- Agrega más fakemons según sea necesario -->
+</fakemons>
